@@ -1,3 +1,21 @@
-include _template
+extends _template
 block body
-  
+  section.topbar
+    .container.w-full.mx-6
+      .pt-4.flex.align-center.cursor-pointer
+        img.h-auto.pr-1(src='images/icon-berger.png')
+        span Menu
+  section.main.h-screen
+    .container.flex.h-screen.mx-auto.items-center
+      .grid.home
+        .grid-item 
+          img(src='images/logo-a.png')
+        main.grid-item.flex.flex-col.justify-center.pl-6
+          h1.home__welcome-text.font-bold.leading-none DESIGN
+          h2.home__welcome-text--sub.font-bold.leading-none PHOLOSOPHY
+          h4.font-semibold.text-2xl.pt-4 What’s on our mind? 
+          p.font-hairline.text-2xl Collection of articles, videos, and resources made by designers at ascend.
+  .fixed.pin-b.text-center.w-full.mb-8.flex.flex-col
+    span.pb-3.font-bold View More
+    img.w-6.block.mx-auto(src='images/more.png')
+      
