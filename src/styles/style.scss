@@ -29,10 +29,21 @@ body {
   grid-template-columns: 1fr 1fr;
   color:#fff;
   &__welcome-text{
-    font-size: 6rem;
+    font-size: 3rem;
     &--sub{
-      font-size: 5rem;
+      font-size: 2rem;
     }
+  }
+  @media(min-width:768px){
+    &__welcome-text {
+      font-size: 6rem;
+      &--sub {
+        font-size: 5rem;
+      }
+    }
+  }
+  @media(max-width: 768px){
+    grid-template-columns: 1fr;
   }
 }
  
