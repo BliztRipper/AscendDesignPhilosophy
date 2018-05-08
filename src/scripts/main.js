@@ -1,6 +1,15 @@
 //@prepros-prepend ../../node_modules/aos/dist/aos.js
+//@prepros-prepend ../../node_modules/jquery/dist/jquery.min.js
+
 
 AOS.init();
+
+$('#viewmore-home').click(function () {
+  $('html,body').animate({
+      scrollTop: $('.card.h-screen.bg-grey-light').offset().top
+    },
+    'slow');
+});
 
 var acc = document.getElementsByClassName("accordion");
 var i;
