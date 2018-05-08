@@ -1,6 +1,6 @@
 extends _template
 block body
-  section.topbar
+  section.topbar.fixed.pin-t
     .container.w-full.mx-6
       .pt-4.flex.align-center.cursor-pointer(data-aos="fade-down" data-aos-offset="0" data-aos-delay="400" data-aos-duration='1000')
         img.h-auto.pr-1(src='images/icon-berger.png')
@@ -9,7 +9,7 @@ block body
     .container.flex.h-screen.mx-auto.items-center
       .grid.home.mb-8(class='')
         .grid-item(data-aos="fade-left" data-aos-duration='1000') 
-          img.max-w-full.h-auto(src='images/logo-a.png')
+          img.max-w-full.h-auto.p-3(src='images/logo-a.png')
         main.grid-item.flex.flex-col.justify-center.pl-6(data-aos="fade-right" data-aos-delay="200" data-aos-duration='1000')
           h1.home__welcome-text.font-bold.leading-none DESIGN
           h2.home__welcome-text--sub.font-bold.leading-none PHOLOSOPHY
@@ -18,3 +18,5 @@ block body
   .fixed.pin-b.text-center.w-full.mb-8.flex.flex-col(class='invisible md:visible')(data-aos="fade-up" data-aos-offset="0" data-aos-delay="400" data-aos-duration='1000')
     span.pb-3.font-bold View More
     img.w-6.block.mx-auto(src='images/more.png')
+  section
+    .container.mx-auto  
