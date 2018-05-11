@@ -1,11 +1,14 @@
 extends _template
 block body
+  nav.nav-menu.flex.fixed.pin-t.z-10.pl-6.pt-6.items-center(data-aos='fade-down' data-aos-duration='1000' data-aos-delay='600')
+    img.mr-4(src='images/icon-berger.png')
+    span Menu
   .paralax-container
     section.homepage.fixed.pin.z-0
       .homepage__grid
-        .homepage__grid--cell.flex.items-end.justify-center(class='sm:justify-end sm:items-center')
+        .homepage__grid--cell.flex.items-end.justify-center(class='sm:justify-end sm:items-center')(data-aos='fade-left' data-aos-delay='200' data-aos-duration='800')
           img(src='images/logo-a.png')
-        .homepage__grid--cell.flex.justify-center.flex-col.pl-8
+        .homepage__grid--cell.flex.justify-center.flex-col.pl-8(data-aos='fade-right' data-aos-delay='400' data-aos-duration='800')
           header.welcome-text.text-white
             h1.welcome-text__1.leading-none DESIGN 
             h2.welcome-text__2.leading-none PHILOSOPHY
